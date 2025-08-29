@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Chatbot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="/static/chatbox.css">
+</head>
+<body>
+
+<!-- ============ Chatbot ============ -->
+<button class="cb-fab" id="cbFab" aria-label="Abrir chat">
+  <span class="pulse" aria-hidden="true"></span>
+  <span>¿Necesitas ayuda?</span>
+</button>
+
+<div class="cb-overlay" id="cbOverlay" aria-hidden="true"></div>
+
+<section class="cb-panel" id="cbPanel" role="dialog" aria-label="Asistente de Luminarias">
+  <header class="cb-header">
+    <div class="cb-logo" aria-hidden="true"></div>
+    <div>
+      <p class="cb-title">Asistente de Ecolite</p>
+      <p class="cb-sub">Atención rápida y personalizada</p>
+    </div>
+    <button id="cbClose" class="cb-close" aria-label="Cerrar">✕</button>
+  </header>
+
+  <div class="cb-body">
+    <div class="cb-stream" id="cbStream" aria-live="polite"></div>
+    <footer class="cb-footer">
+      <input id="cbInput" class="cb-input" placeholder="Escribe tu mensaje o elige una opción…" />
+      <button id="cbSend" class="cb-send">Enviar</button>
+    </footer>
+  </div>
+</section>
+
+  <script type="module" src="/static/chatbox.js"></script> 
+</body>
+</html>
