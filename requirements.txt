@@ -10,3 +10,4 @@ openai
 llama-index
 beautifulsoup4
 requests
+gunicorn
