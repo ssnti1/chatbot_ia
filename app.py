@@ -131,8 +131,8 @@ def load_index():
 
 def find_by_text(q: str, k: int = 3):
     if not q: return []
-    q = q.lower()
-    scored = []
+    q = q.lower()  
+    scored = [] 
     for code, p in PRODUCTOS.items():
         name = p["name"].lower()
         # puntuación sencilla por palabras compartidas (>2 letras)
