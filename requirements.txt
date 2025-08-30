@@ -11,3 +11,4 @@ llama-index
 beautifulsoup4
 requests
 gunicorn
+python-docx
