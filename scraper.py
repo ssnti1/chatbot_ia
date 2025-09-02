@@ -4,6 +4,7 @@ import json
 import time
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # 🔹 lista de categorías a recorrer
 CATEGORIES = [
@@ -35,6 +36,29 @@ retries = Retry(total=5, backoff_factor=2,
 session.mount("https://", HTTPAdapter(max_retries=retries))
 session.headers.update({"User-Agent": "Mozilla/5.0"})
 
+# ========== EXTRACCIÓN DE TAGS / CATEGORÍAS ==========
+def scrape_product_meta(product_url: str):
+    """Extrae categorías y etiquetas desde la ficha del producto"""
+    try:
+        res = session.get(product_url, timeout=60)
+        if res.status_code != 200:
+            return [], []
+        soup = BeautifulSoup(res.text, "html.parser")
+        
+        # categorías
+        cat_links = soup.select("span.posted_in a")
+        categories = [c.get_text(strip=True) for c in cat_links]
+
+        # etiquetas
+        tag_links = soup.select("span.tagged_as a")
+        tags = [t.get_text(strip=True) for t in tag_links]
+
+        return categories, tags
+    except Exception as e:
+        print(f"⚠️ Error en {product_url}: {e}")
+        return [], []
+
+# ========== SCRAPER DE CATEGORÍAS ==========
 def scrape_category(base_url: str, productos: dict):
     page = 1
     while True:
@@ -55,6 +79,8 @@ def scrape_category(base_url: str, productos: dict):
 
         print(f"🔎 {base_url} - Página {page}: {len(items)} productos")
 
+        # recolectar todos los productos primero
+        batch = []
         for prod in items:
             title_el = prod.select_one("h3.wd-entities-title a")
             price_el = prod.select_one("span.price")
@@ -76,19 +102,35 @@ def scrape_category(base_url: str, productos: dict):
                 img_url = img_el.get("src") or ""
 
             code = (add_btn.get("data-product_sku") or "").strip().upper()
+            if not code:
+                continue
 
-            if code:
+            batch.append((code, name, price_text, img_url, product_url, base_url))
+
+        # pedir meta (categorías + tags) en paralelo
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            future_map = {executor.submit(scrape_product_meta, b[4]): b for b in batch}
+            for fut in as_completed(future_map):
+                code, name, price_text, img_url, product_url, base_url = future_map[fut]
+                try:
+                    categories, tags = fut.result()
+                except Exception:
+                    categories, tags = [], []
+
                 productos[code] = {
                     "code": code,
                     "name": name,
                     "price": price_text,
                     "img_url": img_url,
                     "url": product_url,
-                    "category": base_url
+                    "category": base_url,
+                    "categories": categories,
+                    "tags": tags
                 }
+                print(f"✔️ {code} - {name} ({len(tags)} tags)")
 
         page += 1
-        time.sleep(1.2)  # 💡 un poco más de pausa
+        time.sleep(1.0)
 
         # 📝 checkpoint cada 5 páginas
         if page % 5 == 0:
