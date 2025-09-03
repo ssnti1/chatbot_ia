@@ -3616,7 +3616,7 @@
   "TLMCOL": {
     "code": "TLMCOL",
     "name": "Luminaria Colgante Esférica LED para Sistema de Riel Magnético 9W TLMCOL0",
-    "price": "$146.860-$174.346Rango de precios: desde $ 146.860 hasta $ 174.346",
+    "price": "$146.860-$174.346",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2024/05/TLMCOL0_Pagin2.jpg",
     "url": "https://ecolite.com.co/producto/luminaria-colgante-iluminacion-interior-blanco-9w-tlmcol0/",
     "category": "https://ecolite.com.co/precio/luminarias-interiores/",
@@ -4424,7 +4424,7 @@
   "ECOPL8WA": {
     "code": "ECOPL8WA",
     "name": "Bala LED sumergible 8W de sobreponer ECOPL8WA",
-    "price": "$152.880-$171.546Rango de precios: desde $ 152.880 hasta $ 171.546",
+    "price": "$152.880-$171.546",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2024/01/ECOPL8WA.webp",
     "url": "https://ecolite.com.co/producto/bala-led-sumergible-8w-de-sobreponer-ecopl8wa/",
     "category": "https://ecolite.com.co/precio/iluminacion-sumergible/",
@@ -4780,18 +4780,14 @@
       "Aplique de Pared 2 Focos",
       "Aplique de Pared Bidireccional",
       "Aplique de Pared con Cable",
-      "Aplique de Pared de Aluminio",
       "Aplique de Pared Doble",
-      "Aplique Electricidad",
       "Aplique para Balcón",
       "Aplique Pared Habitación Infantil",
       "Apliques de Pared de Diseño",
       "Apliques de Pared Decorativos",
       "Apliques de Pared Direccionales",
-      "Apliques de Pared Eléctricos",
       "Apliques de Pared Interior Modernos",
       "Apliques de Pared Luz Arriba y Abajo",
-      "Apliques de Pared Luz Indirecta",
       "Apliques de Pared Metálicos",
       "Apliques de Pared Minimalistas",
       "Apliques de Pared Modernos para Pasillos",
@@ -4808,7 +4804,6 @@
       "Apliques LED Para Pared",
       "Apliques para Pared Modernos",
       "Iluminación Decorativa",
-      "Iluminación LED",
       "Luces Decorativas para Interiores",
       "Luces para Interior de Piscina",
       "Luces para Muros Interiores",
@@ -4880,13 +4875,12 @@
   "ECOPL24WA": {
     "code": "ECOPL24WA",
     "name": "Bala LED sumergible 24W compatible con nicho pentair ECOPL24WA",
-    "price": "$259.466-$363.814Rango de precios: desde $ 259.466 hasta $ 363.814",
+    "price": "$259.466-$363.814",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2024/01/ECOPL12WA-1.jpg",
     "url": "https://ecolite.com.co/producto/bala-led-sumergible-24w-de-sobreponer-ecopl24wa/",
     "category": "https://ecolite.com.co/precio/iluminacion-sumergible/",
     "categories": [
       "Balas LED Sumergibles de Sobreponer",
-      "Iluminación LED",
       "Iluminación LED Sumergible",
       "Luces para Interior de Piscina"
     ],
@@ -5184,7 +5178,7 @@
   "STR800": {
     "code": "STR800",
     "name": "Cinta LED arquitectónica 8W/M STR800",
-    "price": "$13.104-$27.907Rango de precios: desde $ 13.104 hasta $ 27.907",
+    "price": "$13.104-$27.907",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2023/01/STR800_1-768x768.jpg",
     "url": "https://ecolite.com.co/producto/cinta-con-fuente-led-de-8w-para-sobreponer-str800/",
     "category": "https://ecolite.com.co/precio/iluminacion-decorativa/",
@@ -5260,7 +5254,7 @@
   "STR500": {
     "code": "STR500",
     "name": "Cinta LED neón 5W/M STR500",
-    "price": "$5.600-$21.840Rango de precios: desde $ 5.600 hasta $ 21.840",
+    "price": "$5.600-$21.840",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2023/01/STR500_1-768x768.jpg",
     "url": "https://ecolite.com.co/producto/cinta-con-fuente-led-de-5w-para-sobreponer-str500/",
     "category": "https://ecolite.com.co/precio/iluminacion-decorativa/",
@@ -6275,7 +6269,7 @@
   "ECOPL9W": {
     "code": "ECOPL9W",
     "name": "Bala LED sumergible 9W de sobreponer ECOPL9W",
-    "price": "$153.066-$204.400Rango de precios: desde $ 153.066 hasta $ 204.400",
+    "price": "$153.066-$204.400",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2023/06/Bala-LED-sumergible9W-de-sobreponer.png",
     "url": "https://ecolite.com.co/producto/bala-led-sumergible-9w-de-sobreponer-ecopl9w/",
     "category": "https://ecolite.com.co/precio/iluminacion-sumergible/",
@@ -6717,7 +6711,7 @@
   "LTT812020W": {
     "code": "LTT812020W",
     "name": "Luminaria lineal LED LTT812020W / ARQ20",
-    "price": "$60.666-$91.466Rango de precios: desde $ 60.666 hasta $ 91.466",
+    "price": "$60.666-$91.466",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2023/01/ARQ30_1-768x768.jpg",
     "url": "https://ecolite.com.co/producto/luminaria-lineal-led-ltt812020w/",
     "category": "https://ecolite.com.co/precio/lamparas-negocios/",
@@ -7976,7 +7970,7 @@
   "ECOPL3W": {
     "code": "ECOPL3W",
     "name": "Bala LED sumergible 3W de incrustar ECOPL3W",
-    "price": "$110.133-$291.013Rango de precios: desde $ 110.133 hasta $ 291.013",
+    "price": "$110.133-$291.013",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2023/01/ECOPL3W_1-768x768.jpg",
     "url": "https://ecolite.com.co/producto/bala-sumergible-con-fuente-led-de-3w-para-incrustar-ecopl3w/",
     "category": "https://ecolite.com.co/precio/iluminacion-sumergible/",
@@ -8225,7 +8219,7 @@
   "FLOPL6": {
     "code": "FLOPL6",
     "name": "Reflector LED sumergible 6W FLOPL6",
-    "price": "$117.470-$194.694Rango de precios: desde $ 117.470 hasta $ 194.694",
+    "price": "$117.470-$194.694",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2024/07/FLOPL6.webp",
     "url": "https://ecolite.com.co/producto/reflector-led-sumergible-6w-flopl6/",
     "category": "https://ecolite.com.co/precio/iluminacion-sumergible/",
@@ -8338,7 +8332,7 @@
   "FLOPL3": {
     "code": "FLOPL3",
     "name": "Reflector LED sumergible 3W FLOPL3",
-    "price": "$78.270-$142.426Rango de precios: desde $ 78.270 hasta $ 142.426",
+    "price": "$78.270-$142.426",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2024/07/FLOPL3.webp",
     "url": "https://ecolite.com.co/producto/reflector-led-sumergible-3w-flopl3/",
     "category": "https://ecolite.com.co/precio/iluminacion-sumergible/",
@@ -8439,7 +8433,7 @@
   "ECOPL18W": {
     "code": "ECOPL18W",
     "name": "Bala LED sumergible 18W de sobreponer ECOPL18W",
-    "price": "$464.800-$578.480Rango de precios: desde $ 464.800 hasta $ 578.480",
+    "price": "$464.800-$578.480",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2023/07/ECOPL18W_1-768x768.jpg",
     "url": "https://ecolite.com.co/producto/bala-led-sumergible-18w-de-sobreponer-ecopl18w/",
     "category": "https://ecolite.com.co/precio/iluminacion-sumergible/",
@@ -8459,7 +8453,7 @@
   "ECOPL24W": {
     "code": "ECOPL24W",
     "name": "Bala LED sumergible 24W de sobreponer ECOPL24W",
-    "price": "$464.800-$588.000Rango de precios: desde $ 464.800 hasta $ 588.000",
+    "price": "$464.800-$588.000",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2023/04/ECOPL24W.webp",
     "url": "https://ecolite.com.co/producto/bala-led-sumergible-24w-de-sobreponer-ecopl24w/",
     "category": "https://ecolite.com.co/precio/iluminacion-sumergible/",
@@ -8479,7 +8473,7 @@
   "ECOPL6W": {
     "code": "ECOPL6W",
     "name": "Bala LED sumergible 6W de incrustar ECOPL6W",
-    "price": "$210.000-$317.146Rango de precios: desde $ 210.000 hasta $ 317.146",
+    "price": "$210.000-$317.146",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2023/01/ECOPL6W_1-768x768.jpg",
     "url": "https://ecolite.com.co/producto/bala-sumergible-con-fuente-led-de-6w-para-incrustar-ecopl6w/",
     "category": "https://ecolite.com.co/precio/iluminacion-sumergible/",
@@ -9244,7 +9238,7 @@
   "SOLDIER": {
     "code": "SOLDIER",
     "name": "Luminaria LED portátil y recargable 1W SOLDIER",
-    "price": "$100.800-$110.133Rango de precios: desde $ 100.800 hasta $ 110.133",
+    "price": "$100.800-$110.133",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2024/10/DESKA-G.webp",
     "url": "https://ecolite.com.co/producto/luminaria-led-portatil-y-recargable-1w-soldier/",
     "category": "https://ecolite.com.co/precio/iluminacion-decorativa/",
@@ -10844,7 +10838,7 @@
   "STR1100": {
     "code": "STR1100",
     "name": "Cinta LED arquitectónica 11W/M STR1100",
-    "price": "$13.082-$29.774Rango de precios: desde $ 13.082 hasta $ 29.774",
+    "price": "$13.082-$29.774",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2023/01/STR1100_1-768x768.jpg",
     "url": "https://ecolite.com.co/producto/cinta-con-fuente-led-de-11w-para-sobreponer-str1100/",
     "category": "https://ecolite.com.co/precio/iluminacion-decorativa/",
@@ -10978,7 +10972,7 @@
   "UMBRELLA": {
     "code": "UMBRELLA",
     "name": "Luminaria LED portátil y recargable 2W UMBRELLA",
-    "price": "$166.134-$177.334Rango de precios: desde $ 166.134 hasta $ 177.334",
+    "price": "$166.134-$177.334",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2023/07/DESKB-G.webp",
     "url": "https://ecolite.com.co/producto/luminaria-led-portatil-y-recargable-3w-umbrella/",
     "category": "https://ecolite.com.co/precio/iluminacion-decorativa/",
@@ -11145,7 +11139,7 @@
   "ECOBP1M": {
     "code": "ECOBP1M",
     "name": "Bala de piso LED mini 1W ECOBP1M",
-    "price": "$47.600-$54.134Rango de precios: desde $ 47.600 hasta $ 54.134",
+    "price": "$47.600-$54.134",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2023/01/ECOBP1M_1-768x768.jpg",
     "url": "https://ecolite.com.co/producto/bala-piso-con-fuente-led-de-1w-para-incrustar-ecobp1m/",
     "category": "https://ecolite.com.co/precio/iluminacion-decorativa/",
@@ -11225,7 +11219,7 @@
   "ECOBP3W": {
     "code": "ECOBP3W",
     "name": "Bala de piso LED 3W ECOBP3W",
-    "price": "$40.974-$64.400Rango de precios: desde $ 40.974 hasta $ 64.400",
+    "price": "$40.974-$64.400",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2023/05/ECOBP3W_PAGWEB8-1.webp",
     "url": "https://ecolite.com.co/producto/bala-piso-con-fuente-led-de-3w-para-incrustar-ecobp3w/",
     "category": "https://ecolite.com.co/precio/iluminacion-decorativa/",
@@ -13355,7 +13349,7 @@
   "PSTSUN5W": {
     "code": "PSTSUN5W",
     "name": "Estaca Solar LED para jardín 5W PSTSUN5W",
-    "price": "$59.920-$83.814Rango de precios: desde $ 59.920 hasta $ 83.814",
+    "price": "$59.920-$83.814",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2023/01/PSTSUN5W_1-768x768.jpg",
     "url": "https://ecolite.com.co/producto/estaca-para-jardin-con-fuente-led-de-5w-para-incrustar-pstsun5w/",
     "category": "https://ecolite.com.co/precio/lamparas-solares-led/",
@@ -13722,7 +13716,7 @@
   "N-EXRP": {
     "code": "N-EXRP",
     "name": "Extractor de Aire 18W N-EXRP6",
-    "price": "$95.013-$104.346Rango de precios: desde $ 95.013 hasta $ 104.346",
+    "price": "$95.013-$104.346",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2024/02/N-EXRP4.jpg",
     "url": "https://ecolite.com.co/producto/extractor-de-aire-18w-n-exrp6/",
     "category": "https://ecolite.com.co/precio/productos-electricos/",
@@ -14057,7 +14051,7 @@
   "N-EXR": {
     "code": "N-EXR",
     "name": "Extractor de Aire 13W N-EXRP4",
-    "price": "$74.480-$80.080Rango de precios: desde $ 74.480 hasta $ 80.080",
+    "price": "$74.480-$80.080",
     "img_url": "https://ecolite.com.co/wp-content/uploads/2024/02/N-EXRP4.jpg",
     "url": "https://ecolite.com.co/producto/extractor-de-aire-13w-n-exrp4/",
     "category": "https://ecolite.com.co/precio/productos-electricos/",
