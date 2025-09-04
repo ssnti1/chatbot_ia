@@ -135,7 +135,7 @@ def _norm(s: Any) -> str:
 code_regex = re.compile(r"\b(?=[A-Z0-9\-]{3,15}\b)(?=.*\d)[A-Z0-9\-]+\b")
 
 # --- Heurísticas robustas para capturar intención con typos ---
-SUGERIR_RE = re.compile(r"\b(sug|sugi|sugie|sugier|sugiere|sugi[eé]reme|sugerir|sugerencia|recomiend|recomienda|recomi[eé]ndame)\w*\b", re.I)
+SUGERIR_RE = re.compile(r"\b(sug|sugi|sugie|sugier|sugiere|sugi[eé]reme|sugerir|sugerencia|recomiend|recomienda|sugiere|recomiende|sugiera|recomi[eé]ndame)\w*\b", re.I)
 ESPECIFICO_RE = re.compile(r"\b(especific|espec[ií]fica|tengo\s+una|ya\s+tengo|c[oó]digo|codigo|referencia|sku|modelo|nombre)\w*\b", re.I)
 
 def said_suggest(txt: str) -> bool:
