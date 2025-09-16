@@ -1056,32 +1056,6 @@ async def chat(in_: ChatIn, request: Request):
     if isinstance(budget, int):
         st["presupuesto"] = budget
 
-    new_space = detect_space_from_text(user)
-    if new_space:
-        if st.get("espacio") != new_space:
-            st["espacio"] = new_space
-            st["modo"] = None
-            st["temperatura"] = None
-            st["vatios"] = None
-            st["instalacion"] = None
-            st["mostrados"].clear()
-
-    SPACE_TO_CAT = {
-        "bodega": "industrial",
-        "oficina": "panel",
-        "pasillo": "tubo",
-        "piscina": "piscina",   # funcionará porque el buscador usa tokens dinámicos
-    }
-
-    if new_space:
-        st["espacio"] = new_space
-        st["cat"] = SPACE_TO_CAT.get(new_space)
-        st["modo"] = None
-        st["temperatura"] = None
-        st["vatios"] = None
-        st["instalacion"] = None
-        st["mostrados"].clear()
-
 
         return {
             "reply": "¿Quieres que te sugiera o tienes una luminaria en específico?",
@@ -1216,8 +1190,56 @@ async def chat(in_: ChatIn, request: Request):
 
     elif action == "SEARCH_SPECIFIC":
         productos = []
+        code_tok = extraer_codigo(user)
 
-    
+        # --- 1) Si el usuario dio un código exacto ---
+        if code_tok and code_tok in PRODUCTOS:
+            p = PRODUCTOS[code_tok]
+            brain["reply"] = f"Esto es lo que encontré para {code_tok} 👇"
+            return {
+                "reply": brain["reply"],
+                "productos": [{
+                    "code": code_tok,
+                    "name": p.get("name"),
+                    "price": p.get("price"),
+                    "img_url": p.get("img_url"),
+                    "url": p.get("url"),
+                    "tags": p.get("tags", []),
+                    "categories": p.get("categories", []),
+                }],
+                "session_id": session_id
+            }
+
+        # --- 2) Si no coincide directo, buscar aproximado en nombre/categorías ---
+        if code_tok:
+            for c, p in PRODUCTOS.items():
+                cu = c.upper()
+                name_u = (p.get("name") or "").upper()
+                if code_tok in cu or code_tok in name_u:
+                    productos = [{
+                        "code": c,
+                        "name": p.get("name"),
+                        "price": p.get("price"),
+                        "img_url": p.get("img_url"),
+                        "url": p.get("url"),
+                        "tags": p.get("tags", []),
+                        "categories": p.get("categories", []),
+                    }]
+                    brain["reply"] = f"Esto es lo que encontré para {code_tok} 👇"
+                    return {"reply": brain["reply"], "productos": productos, "session_id": session_id}
+
+        # --- 3) Fallback: búsqueda híbrida (tokens + embeddings + categoría) ---
+        productos = buscar_hibrido(user, st.get("espacio"), st.get("cat"), k=5)
+
+        if productos:
+            if code_tok:
+                brain["reply"] = f"Esto es lo que encontré para {code_tok} 👇"
+            else:
+                brain["reply"] = "Esto es lo que encontré 👇"
+        else:
+            brain["reply"] = "No encontré productos que coincidan con ese código 🤔"
+
+
     elif action == "MORE_SUGGESTIONS" or es_pedido_de_mas(user):
         cat = st.get("cat")
         label = LABELS.get(cat, "opciones")
@@ -1238,17 +1260,20 @@ async def chat(in_: ChatIn, request: Request):
     if code_tok:
         if code_tok in PRODUCTOS:
             p = PRODUCTOS[code_tok]
-            productos = [{
-                "code": code_tok,
-                "name": p.get("name"),
-                "price": p.get("price"),
-                "img_url": p.get("img_url"),
-                "url": p.get("url"),
-                "tags": p.get("tags", []),
-                "categories": p.get("categories", []),
-            }]
-            brain["reply"] = f"Esto es lo que encontré para {code_tok} 👇"
-            return {"reply": brain["reply"], "productos": productos, "session_id": session_id}
+            return {
+                "reply": f"Esto es lo que encontré para {code_tok} 👇",
+                "productos": [{
+                    "code": code_tok,
+                    "name": p.get("name"),
+                    "price": p.get("price"),
+                    "img_url": p.get("img_url"),
+                    "url": p.get("url"),
+                    "tags": p.get("tags", []),
+                    "categories": p.get("categories", []),
+                }],
+                "session_id": session_id
+            }
+
         else:
             for c, p in PRODUCTOS.items():
                 cu = c.upper()
