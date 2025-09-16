@@ -1167,9 +1167,7 @@
     "tags": [
       "Bombillos LED",
       "E27",
-      "emergencia",
       "Enroscar",
-      "Iluminacion Emergencia",
       "Iluminacion Interior",
       "Interior"
     ]
@@ -1214,7 +1212,6 @@
     "tags": [
       "Bombillos LED",
       "E27",
-      "emergencia",
       "Enroscar",
       "Iluminacion Emergencia",
       "Iluminacion Interior",
@@ -7759,75 +7756,6 @@
       "Sobreponer"
     ]
   },
-  "LBGU107W": {
-    "code": "LBGU107W",
-    "name": "Bombillo LED 7W base GU10 LBGU107W",
-    "price": "$6.440",
-    "img_url": "https://ecolite.com.co/wp-content/uploads/2023/04/LBGU107W-DIM-768x768.jpg",
-    "url": "https://ecolite.com.co/producto/spot-con-fuente-led-de-7w-para-enroscar-roscagu10-lbgu107w/",
-    "category": "https://ecolite.com.co/precio/iluminacion-decorativa/",
-    "categories": [
-      "Bombilla Blanco Cálido",
-      "Bombilla Led 3000k",
-      "Bombilla Led GU10 3000k",
-      "Bombilla Led GU10 7w",
-      "Bombilla Led GU10 7w 3000k",
-      "Bombilla Luz Amarilla",
-      "Bombilla Luz Día",
-      "Bombilla Ojo de Buey",
-      "Bombillas Led Blanco Frio",
-      "Bombillas Led GU10 Luz Cálida",
-      "Bombillas Led GU10 Luz Fria",
-      "Bombillas Led Luz Fria",
-      "Bombillas Led para Techo",
-      "Bombillas Luz Blanca",
-      "Bombillas para Espejo",
-      "Bombillo Led 7w",
-      "Bombillos Ahorradores de Luz Blanca",
-      "Bombillos GU10",
-      "Bombillos Modernos",
-      "Bombillos para Habitación",
-      "Dicroicas Led Luz Cálida",
-      "Dicroico Led GU10",
-      "Foco Blanco de Techo",
-      "Foco Dicroica Led",
-      "Foco LED Empotrable",
-      "Foco Led Empotrable Pequeño",
-      "Focos de Luz Blanca para Casa",
-      "Focos Empotrables Led para Techo",
-      "Focos Led de Techo para Salón",
-      "Focos Led Empotrables Techo Pequeños",
-      "Focos Led Interior de Techo",
-      "Focos Led para Casa Ahorradores",
-      "Focos Modernos para Techo",
-      "Focos para Casa Modernos",
-      "Focos para Interior de Casa",
-      "Focos para Lámparas Pequeñas",
-      "Focos para Pasillos",
-      "Focos Pequeños para Techo",
-      "Foquitos Led",
-      "Foquitos Led para Techo",
-      "Foquitos Led Pequeños",
-      "Iluminación LED",
-      "Iluminación Led Interior para Techo",
-      "Lámpara de Interior para Empotrar",
-      "Lámpara Techo GU10",
-      "Lámparas Colgantes de Cristal para Comedor",
-      "Luces Interiores Led para Casa",
-      "Luces Led para Interior de Muebles",
-      "Luces Led para Negocios Interior",
-      "Luces Led para Pasillos Interiores",
-      "Luminarias LED Interiores",
-      "Luz Led Interior para Armario",
-      "Luz Led para Armarios Empotrados"
-    ],
-    "tags": [
-      "Fuente LED",
-      "GU10",
-      "Iluminacion Interior",
-      "Interior"
-    ]
-  },
   "LBGU107WDIM": {
     "code": "LBGU107WDIM",
     "name": "Bombillo LED 7W dimerizable base GU10 LBGU107W DIM",
@@ -11200,6 +11128,7 @@
       "Farol Exterior Led",
       "Farol LED",
       "Farol LED de Alumbrado Público",
+      "alumbrado_publico",
       "Farol Led Decorativo",
       "Farol Led Jardín",
       "Farol Redondo Exterior",
@@ -12968,6 +12897,7 @@
       "Luces Blancas Solares",
       "Luminaria Peatonal Led",
       "Luminaria Vial Solar",
+      "alumbrado_publico",
       "Luminarias Urbanas Solares",
       "Luz Solar Exterior Potente"
     ],
@@ -13111,6 +13041,7 @@
     "category": "https://ecolite.com.co/precio/lamparas-solares-led/",
     "categories": [
       "Alumbrado Público con Celdas Solares",
+      "alumbrado_publico",
       "Bombillas Solares Exterior",
       "Control Remoto para Lámpara Solar",
       "Farola Solar para Alumbrado Público",
@@ -13404,6 +13335,7 @@
     "categories": [
       "Alumbrado Público con Celdas Solares",
       "Alumbrado Público Solar",
+      "alumbrado_publico",
       "Bombillas Solares Exterior",
       "Control Remoto para Lámpara Solar",
       "Farola Solar para Alumbrado Público",
@@ -13858,6 +13790,7 @@
     "url": "https://ecolite.com.co/producto/fuente-de-poder-slim-12v-10a-120w-drsc5/",
     "category": "https://ecolite.com.co/precio/productos-electricos/",
     "categories": [
+      "Fuente de Poder para Cinta LED",
       "Fuente 110 a 24V",
       "Fuente Centralizada 12V",
       "Fuente de 12V A 24V",
@@ -13908,6 +13841,7 @@
     "url": "https://ecolite.com.co/producto/fuente-de-poder-slim-12v-5a-60w-drsc4/",
     "category": "https://ecolite.com.co/precio/productos-electricos/",
     "categories": [
+      "Fuente de Poder para Cinta LED",
       "Fuente Centralizada 12V",
       "Fuente de 12V A 24V",
       "Fuente de 24V a 12V",
@@ -13933,6 +13867,7 @@
     "url": "https://ecolite.com.co/producto/fuente-de-poder-slim-12v-4a-48w-drsc3/",
     "category": "https://ecolite.com.co/precio/productos-electricos/",
     "categories": [
+      "Fuente de Poder para Cinta LED",
       "Fuente Centralizada 12V",
       "Fuente de 12V A 24V",
       "Fuente de 24V a 12V",
@@ -13957,6 +13892,7 @@
     "url": "https://ecolite.com.co/producto/fuente-de-poder-slim-12v-3a-36w-drsc2/",
     "category": "https://ecolite.com.co/precio/productos-electricos/",
     "categories": [
+      "Fuente de Poder para Cinta LED",
       "Fuente Centralizada 12V",
       "Fuente de 12V A 24V",
       "Fuente de 24V a 12V",
@@ -14031,6 +13967,7 @@
     "url": "https://ecolite.com.co/producto/fuente-de-poder-slim-12v-2a-24w-drsc1/",
     "category": "https://ecolite.com.co/precio/productos-electricos/",
     "categories": [
+      "Fuente de Poder para Cinta LED",
       "Fuente Centralizada 12V",
       "Fuente de 12V A 24V",
       "Fuente de 24V a 12V",

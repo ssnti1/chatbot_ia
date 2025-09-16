@@ -214,10 +214,9 @@ async function onSend() {
 
   } catch (e) {
     typing(false);
-    pushBot("⚠️ No me pude conectar, intenta de nuevo.");
+    pushBot("⚠️ Ha ocurrido un error, intenta de nuevo.");
   }
 }
-
 
 
 function addProductCard(prod) {

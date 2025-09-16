@@ -79,7 +79,6 @@ def scrape_category(base_url: str, productos: dict):
 
         print(f"🔎 {base_url} - Página {page}: {len(items)} productos")
 
-        # recolectar todos los productos primero
         batch = []
         for prod in items:
             title_el = prod.select_one("h3.wd-entities-title a")
@@ -107,7 +106,6 @@ def scrape_category(base_url: str, productos: dict):
 
             batch.append((code, name, price_text, img_url, product_url, base_url))
 
-        # pedir meta (categorías + tags) en paralelo
         with ThreadPoolExecutor(max_workers=10) as executor:
             future_map = {executor.submit(scrape_product_meta, b[4]): b for b in batch}
             for fut in as_completed(future_map):
@@ -132,17 +130,14 @@ def scrape_category(base_url: str, productos: dict):
         page += 1
         time.sleep(1.0)
 
-        # 📝 checkpoint cada 5 páginas
         if page % 5 == 0:
             with open(CHECKPT, "w", encoding="utf-8") as f:
                 json.dump(productos, f, ensure_ascii=False, indent=2)
             print(f"💾 Checkpoint guardado con {len(productos)} productos")
 
-# 🔄 ejecutar scraping para todas las categorías
 for cat in CATEGORIES:
     scrape_category(cat, productos)
 
-# guardar en JSON final
 with open(OUTPUT, "w", encoding="utf-8") as f:
     json.dump(productos, f, ensure_ascii=False, indent=2)
 
